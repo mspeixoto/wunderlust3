@@ -1,0 +1,273 @@
+/* Mandy Sue Peixoto/*
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Body*/
+#skip{
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
+/*header*/
+h1, h2, h3{
+    font-family: 'Molle', cursive;
+}
+
+h1{
+    font-size: 60px;
+    padding-top: 40px;
+   text-align: left;
+}
+
+h2, h3{
+    font-size: 20px;
+}
+h4, p, q, small, nav, button, form {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header p{
+    font-size: 20px;
+}
+
+
+
+/* navigation */
+nav{
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+nav, ul, li{
+    display: block;
+    margin:10px 10px 10px 10px;
+    text-align:center;
+    float:right;
+   
+}
+label[for=toggle]{
+    background-color:black;
+    color:#fff;
+}
+li, a{
+    text-decoration: none;
+}
+
+
+
+/* Main*/
+.main-content{
+    display:flex;
+}
+
+#img-grid{
+    
+}
+
+#img-grid img{
+    width: 10%;
+    display: inline-block;
+    
+}
+
+#img-grid picture{
+    width:203%;
+    display:flex;
+}
+
+#img-grid{
+   
+}
+
+#intro{
+    display: flex;
+}
+
+#intro p{
+    flex: 3;
+}
+/* PLAN*/
+
+#plan{
+    background-color:#f6d64a;
+    padding-top: 55px;
+    padding-bottom: 70px;
+}
+
+#plan h3{
+    
+    padding-bottom:20px;
+    padding-left: 60px;
+
+}
+
+#plan h4{
+    padding-top:10px;
+    padding-bottom:20px;
+    padding-left: 40px;
+}
+#plan div{
+    display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+} 
+
+
+#plan img{
+    width: 100px;
+    height: 100px;
+  padding-left:50px;
+    padding-top:10px;
+    padding-bottom:20px;
+}
+
+#plan section{
+    display: inline-block;
+    padding: 10px 10px 10px 10px;
+    margin-left: 60px;
+    margin-right: 60px;
+    border: 20px;
+    border-color: #fff;
+    background:#55bcd5;
+    align-items: center;
+
+   
+}
+/* testimonials*/
+
+
+
+#testimonials img{
+    width: 100px;
+    height: 100px;
+    padding-bottom: 10px;
+
+}
+
+#testimonials div{
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+
+
+#testimonials section{
+    padding: 80px;
+    text-align: center;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+
+#testimonials h3{
+    padding-left: 80px;
+    padding-top: 60px;
+}
+
+#testimonials h4{
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 23px;
+    font-weight:bold;
+    
+}
+
+#testimonials p{
+    padding-top: 2px;
+    padding-bottom: 2px;
+   
+    
+}
+
+#testimonials q{
+    padding-top: 2px;
+    padding-bottom: 2px;
+    width: 250px;
+}
+/* About*/
+#about{
+    background-color:#499bd2;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#about section{
+    display: inline-block;
+    align-items: center;
+}
+
+#about div{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+#about img{
+    width: 70px;
+    height: 70px;
+}
+/* footer*/
+
+.radio-control{
+    
+}
+
+/* small devices*/
+@media screen and (min-width: 320px) and (max-width:480px){
+    body{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
